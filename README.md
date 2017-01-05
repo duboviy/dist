@@ -1,6 +1,8 @@
 dist
 ========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2828cf960c8404e86b487c0b79656ab)](https://www.codacy.com/app/dubovoy/dist?utm_source=github.com&utm_medium=referral&utm_content=duboviy/dist&utm_campaign=badger)
+
 Python/C API extension module that computes distance between two coordinates on the world map.
 You can get distance result in:
 - miles (default)
