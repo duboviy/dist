@@ -49,9 +49,20 @@ static PyMethodDef DistanceMethods[] = {
     {NULL, NULL, 0, NULL}
 };
 
+static struct PyModuleDef distance_module = {
+    PyModuleDef_HEAD_INIT,
+    "dist",   /* name of module */
+    NULL, /* module documentation,
+               may be NULL */
+    -1,       /* size of per-interpreter
+               state of the module,
+               or -1 if the module keeps
+               state in global variables. */
+    DistanceMethods
+};
 
-PyMODINIT_FUNC
-initdist(void)
+
+PyMODINIT_FUNC PyInit_dist(void)
 {
-    (void) Py_InitModule("dist", DistanceMethods);
-}
+    return PyModule_Create(&distance_module);
+};
