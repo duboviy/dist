@@ -7,7 +7,7 @@ Python/C API extension module that computes distance between two coordinates on 
 Why?
 ----
 
-As more and more apps are using maps, the more demand for geolocation capabilities increase.  Geolocation is about the reporting of your location to other users, as well as associating real-world locations (such as landmarks) to your location. This repo helps to accurately calculate the distance between two locations and presents a time efficient practical solution, that is *almost 3 times faster than similar fast pure python implementation*.
+As more and more apps are using maps, the more demand for geolocation capabilities increase.  Geolocation is about the reporting of your location to other users, as well as associating real-world locations (such as landmarks) to your location. This repo helps to accurately calculate the distance between two locations and presents a time efficient practical solution, that is almost 3 times faster than similar fast pure python implementation.
 
 
 Installation
@@ -37,7 +37,7 @@ Usage
 Performance / speed comparison
 ------------------------------
 
-This Python/C API Extension module is in ~ 3 times faster than similar fast pure python implementation. You can use following script to compare performance / speed with fast pure python implementation:
+This Python/C API Extension module is **in ~ 3 times faster than similar fast pure python implementation**. You can use following script to compare performance / speed with fast pure python implementation:
 
 ```
 >>> python compare_performance.py
