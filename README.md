@@ -1,6 +1,8 @@
 dist
 ========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2828cf960c8404e86b487c0b79656ab)](https://www.codacy.com/app/dubovoy/dist?utm_source=github.com&utm_medium=referral&utm_content=duboviy/dist&utm_campaign=badger) [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/duboviy/dist/) [![PRs & Issues Welcome](https://img.shields.io/badge/PRs%20&%20Issues-welcome-brightgreen.svg)](https://github.com/duboviy/dist/pulls) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/duboviy/dist/)
+
 Python/C API extension module that computes distance between two coordinates on the world map.
 
 
