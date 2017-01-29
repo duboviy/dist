@@ -1,0 +1,26 @@
+language: python
+python:
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev" # 3.5 development branch
+
+# Disabled for now since cause more pain than gain
+  - "pypy"
+  - "pypy3"
+
+# command to install dependencies
+install:
+  - pip install -r requirements_testing.txt
+  - travis_retry python setup.py install
+
+env:
+  - CODACY_PROJECT_TOKEN=94cb5b0f0ded4cc78756d629052f3ab8
+
+ # command to run tests
+script: nosetests --with-coverage --cover-package=dist tests/
+
+after_success:
+  - coverage xml
+  - python-codacy-coverage -v -r coverage.xml

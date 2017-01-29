@@ -22,7 +22,7 @@ def test_positive_scenario():
     assert int(dist.compute(lat1, lng1, lat2, lng2)) == int(pure_py_dist(lat1, lng1, lat2, lng2))
 
 
-def compare_performance():
+def test_performance():
     pure_py_time = timeit.timeit("pure_py_dist(10.1, 12.1, 10.1, 10.1)", number=10000000,
                                  setup="from __main__ import pure_py_dist")
     ext_time = timeit.timeit("dist.compute(10.1, 12.1, 10.1, 10.1)", number=10000000,
@@ -34,6 +34,4 @@ def compare_performance():
 
 if __name__ == '__main__':
     test_positive_scenario()
-    compare_performance()
-
-
+    test_performance()
