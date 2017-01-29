@@ -39,7 +39,7 @@ def test_performance():
 
     ext_time = timer() - start_time
 
-    print("ext_time: {} pure_py_time {}".format(pure_py_time, ext_time))
+    print("ext_time: {} pure_py_time: {}".format(ext_time, pure_py_time))
     # My Python/C API Extension is in ~ 3 times faster than fast pure python implementation
     assert ext_time < pure_py_time
 

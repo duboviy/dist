@@ -39,17 +39,25 @@ Usage
 Performance / speed comparison
 ------------------------------
 
-This Python/C API Extension module is **in ~ 3 times faster than similar fast pure python implementation**. You can use following script to compare performance / speed with fast pure python implementation:
+This Python/C API Extension module is **in ~ 3 times faster than similar fast pure python implementation**. You can use performance test to compare speed with fast pure python implementation, just run nose test runner:
 
 ```
->>> python compare_performance.py
-ext_time: 7.49713611603 pure_py_time 2.46785402298
+>>> nosetests
+ext_time: 2.46785402298 pure_py_time: 7.49713611603
 ```
 
 
 Python Versions
 ---------------
-Checked under Python 2.7 and Python 3.3
+Checked under following Python versions:
+* "2.5"
+* "2.6"
+* "2.7"
+* "3.3"
+* "3.4"
+* "3.5"
+* "3.6"
+
 
 
 What does it use inside? What kind of formula implementation is used? 
