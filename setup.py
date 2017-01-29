@@ -12,7 +12,29 @@ else:
 
 setup(
     name="dist",
-    version="0.0.1",
+    packages=['dist'],
+    version="1.0.0",
     description="Compute distance between two coordinates on the map",
+    author='Eugene Duboviy',
+    author_email='eugene.dubovoy@gmail.com',
+    url='https://github.com/duboviy/dist',
+    download_url = 'https://github.com/duboviy/dist/tarball/1.0.0',
+    keywords = ['distance', 'coordinates', 'map', 'performance'],
+    classifiers=[
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    long_description="""
+As more and more apps are using maps, the more demand for geolocation capabilities increase.
+Geolocation is about the reporting of your location to other users,
+as well as associating real-world locations (such as landmarks) to your location.
+This repo helps to accurately calculate the distance between two locations
+and presents a time efficient practical solution,
+that is almost 3 times faster than similar fast pure python implementation.
+""",
     ext_modules=[ext],
 )
