@@ -2,7 +2,7 @@
 
 by [Eugene Duboviy](https://duboviy.github.io/)
 
-[![Build Status](https://travis-ci.org/duboviy/dist.svg?branch=master)](https://travis-ci.org/duboviy/dist) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2828cf960c8404e86b487c0b79656ab)](https://www.codacy.com/app/dubovoy/dist?utm_source=github.com&utm_medium=referral&utm_content=duboviy/dist&utm_campaign=badger) [![Code Health](https://landscape.io/github/duboviy/dist/master/landscape.svg?style=flat)](https://landscape.io/github/duboviy/dist/master) [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/duboviy/dist/) [![PRs & Issues Welcome](https://img.shields.io/badge/PRs%20&%20Issues-welcome-brightgreen.svg)](https://github.com/duboviy/dist/pulls) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/duboviy/dist/) 
+[![Build Status](https://travis-ci.org/duboviy/dist.svg?branch=master)](https://travis-ci.org/duboviy/dist) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2828cf960c8404e86b487c0b79656ab)](https://www.codacy.com/app/dubovoy/dist?utm_source=github.com&utm_medium=referral&utm_content=duboviy/dist&utm_campaign=badger) [![Code Health](https://landscape.io/github/duboviy/dist/master/landscape.svg?style=flat)](https://landscape.io/github/duboviy/dist/master) [![PyPI](https://img.shields.io/pypi/v/dist.svg)](https://pypi.python.org/pypi/dist) [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/duboviy/dist/) [![PRs & Issues Welcome](https://img.shields.io/badge/PRs%20&%20Issues-welcome-brightgreen.svg)](https://github.com/duboviy/dist/pulls) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/duboviy/dist/) 
 
 Python/C API extension module that computes distance between two coordinates on the world map.
 
@@ -51,13 +51,13 @@ ext_time: 2.46785402298 pure_py_time: 7.49713611603
 Python Versions
 ---------------
 Checked under following Python versions:
-* "2.5"
-* "2.6"
-* "2.7"
-* "3.3"
-* "3.4"
-* "3.5"
-* "3.6"
+* 2.5
+* 2.6
+* 2.7
+* 3.3
+* 3.4
+* 3.5
+* 3.6
 
 
 What does it use inside? What kind of formula implementation is used? 
