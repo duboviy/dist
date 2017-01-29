@@ -1,5 +1,7 @@
 import math
-import timeit
+from timeit import default_timer as timer
+
+import six
 
 import dist
 
@@ -23,10 +25,20 @@ def test_positive_scenario():
 
 
 def test_performance():
-    pure_py_time = timeit.timeit("pure_py_dist(10.1, 12.1, 10.1, 10.1)", number=10000000,
-                                 setup="from __main__ import pure_py_dist")
-    ext_time = timeit.timeit("dist.compute(10.1, 12.1, 10.1, 10.1)", number=10000000,
-                             setup="from __main__ import dist")
+    start_time = timer()
+
+    for _ in six.xrange(10000000):
+        pure_py_dist(10.1, 12.1, 10.1, 10.1)
+
+    pure_py_time = timer() - start_time
+
+    start_time = timer()
+
+    for _ in six.xrange(10000000):
+        dist.compute(10.1, 12.1, 10.1, 10.1)
+
+    ext_time = timer() - start_time
+
     print("ext_time: {} pure_py_time {}".format(pure_py_time, ext_time))
     # My Python/C API Extension is in ~ 3 times faster than fast pure python implementation
     assert ext_time < pure_py_time

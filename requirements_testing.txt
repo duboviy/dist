@@ -2,3 +2,4 @@
 nose
 coverage
 codacy-coverage
+six
