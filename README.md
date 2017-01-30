@@ -51,7 +51,6 @@ ext_time: 2.46785402298 pure_py_time: 7.49713611603
 Python Versions
 ---------------
 Checked under following Python versions:
-* 2.5
 * 2.6
 * 2.7
 * 3.3
