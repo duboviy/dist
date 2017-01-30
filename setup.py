@@ -4,21 +4,20 @@ from distutils.core import setup, Extension
 
 
 if sys.version_info[0] == 3:    # "using Python 3"
-    ext = Extension("dist", sources=["dist/py3/dist.c"])
+    ext = Extension("dist", sources=["src/py3/dist.c"])
 elif sys.version_info[0] == 2:  # "using Python 2"
-    ext = Extension("dist", sources=["dist/py2/dist.c"])
+    ext = Extension("dist", sources=["src/py2/dist.c"])
 else:
     raise NotImplementedError("Not implemented for your python version")
 
 setup(
     name="dist",
-    packages=['dist'],
-    version="1.0.1",
+    version="1.0.2",
     description="Compute distance between two coordinates on the map",
     author='Eugene Duboviy',
     author_email='eugene.dubovoy@gmail.com',
     url='https://github.com/duboviy/dist',
-    download_url = 'https://github.com/duboviy/dist/tarball/1.0.1',
+    download_url = 'https://github.com/duboviy/dist/tarball/1.0.2',
     keywords = ['distance', 'coordinates', 'map', 'performance'],
     classifiers=[
       "Programming Language :: Python",
