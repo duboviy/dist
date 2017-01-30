@@ -17,7 +17,10 @@ Installation
 ------------
 
     python setup.py install
+    
+Or using alternative command:
 
+    pip install https://github.com/duboviy/dist/archive/master.zip
 
 Input and output data
 ----------

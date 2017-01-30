@@ -12,12 +12,12 @@ else:
 
 setup(
     name="dist",
-    version="1.0.2",
+    version="1.0.3",
     description="Compute distance between two coordinates on the map",
     author='Eugene Duboviy',
     author_email='eugene.dubovoy@gmail.com',
     url='https://github.com/duboviy/dist',
-    download_url = 'https://github.com/duboviy/dist/tarball/1.0.2',
+    download_url = 'https://github.com/duboviy/dist/tarball/1.0.3',
     keywords = ['distance', 'coordinates', 'map', 'performance'],
     classifiers=[
       "Programming Language :: Python",
