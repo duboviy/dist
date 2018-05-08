@@ -20,11 +20,8 @@ double _rad2deg(double rad) {
 double haversine(float lat1, float long1, float lat2, float long2)
 {
     float theta = long1 - long2;
-    float dist = sin(_deg2rad(lat1))     * 
-                     sin(_deg2rad(lat2)) + 
-		     cos(_deg2rad(lat1)) * 
-		     cos(_deg2rad(lat2)) * 
-		     cos(_deg2rad(theta));
+    float dist = sin(_deg2rad(lat1)) * sin(_deg2rad(lat2)) 
+       + cos(_deg2rad(lat1)) * cos(_deg2rad(lat2)) * cos(_deg2rad(theta));
 
     dist = acos(dist);
     dist = _rad2deg(dist);
