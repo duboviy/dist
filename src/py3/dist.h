@@ -2,11 +2,11 @@
  *	@(#)dist.h	 (Vancouver) 8/5/18
  */
 
-#define _USE_MATH_DEFINES
-#include <math.h>
-
 #ifndef _DIST_H_
 #define _DIST_H_
+
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 #define DEG_RAD           (M_PI / 180.0)
 #define RAD_DEG           (180  / M_PI) 
