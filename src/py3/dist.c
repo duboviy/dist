@@ -4,6 +4,7 @@
 #include <string.h>
 #include <math.h>
 #include "dist.h"
+#include <assert.h>
 
 
 // converts decimal degrees to radians
@@ -32,6 +33,8 @@ double haversine(float lat1, float long1, float lat2, float long2)
 
 static PyObject* compute(PyObject* self, PyObject* args)
 {
+    assert(self != NULL && args != NULL);
+
     float lat1;
     float long1;
     float lat2;
